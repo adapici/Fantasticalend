@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+    font-size: 250%;
+    font-family: monospace;
+}
+
+/* this be the code for the background so the color*/
+body {
+background-color: #2a1b3d;
+font-family: "Lato", sans-serif;
+}
+/* h2 h3 h4 things are all code for the huge text of the websire it includes padding, size, color, position*/
+h1 {
+text-align: center;
+font-size: 3em; /* 40px/16=2.5em */
+color: #8464a5;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translateX(-50%) translateY(-50%)
+}
+
+h3 {
+text-align: center;
+font-size: 1.8em; /* 40px/16=2.5em */
+color: #44318d;
+position: absolute;
+top: 55%;
+left: 50%;
+transform: translateX(-50%) translateY(-50%)
+}
+
+h4 {
+  font-size: 2.5em; /* 40px/16=2.5em */
+  Color
+}
+
+
+/* this section will be trying to work with borders*/
+
+#rcorners1 {
+    border-radius: 25px;
+    background: #D83F87;
+    padding: 500px;
+    width: 500px;
+    height: 150px;
+    margin: auto;
+    padding-top:50px;
+
+}
+
+/*
+lines 41 through 77
+this text is for creaeting navigation bar and a working tab button*/
+/* Style the tab */
+
+
+div.tab {
+    overflow: hidden;
+
+    background-color: #a4b3b6;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    length: 25%;
+    width: 25%;
+    padding: 14px 83px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="tab">
+  <button class="tablinks" onclick="opentab(event, 'Home')">Home</button>
+  <button class="tablinks" onclick="opentab(event, 'About')">About</button>
+  <button class="tablinks" onclick="opentab(event, 'Game')">Game</button>
+  <button class="tablinks" onclick="opentab(event, 'Resources')">Resources</button>
+</div>
+
+<div id="Home" class="tabcontent">
+  <h1>Fantastical End </h1>
+  <h3>Mental Health Game</h2>
+  <img src="/home/fantastical.png" alt="fantastical" />
+</div>
+
+<div id="About" class="tabcontent">
+  <h4>About The Creators</h4>
+  <p>Paris is the capital of France.</p>
+</div>
+
+<div id="Game" class="tabcontent">
+  <h4>Game</h4>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<div id="Resources" class="tabcontent">
+  <p id="rcorners1"> Why did we chose to create this game? </p>
+</div>
+
+<script>
+function opentab(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+</body>
+</html>
