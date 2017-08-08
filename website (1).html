@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 <style>
 
 /* this is to create the circular shape of our profile pictures */
@@ -11,12 +13,8 @@
 /*  the properties for our text*/
 p {
     font-size: 250%;
-    font-family: monospace;
-<<<<<<< HEAD
     background-color: white;
     position: absolute;
-=======
->>>>>>> 3c5d9e78b72c8cc5065ead9ac37c4173499884f9
 }
 /* this be the code for the background so the color*/
 body {
@@ -35,21 +33,20 @@ transform: translateX(-50%) translateY(-50%)
 }
 h3 {
   text-align: left;
-  font-size: 1.4em;
-  font-family: monospace;
+  font-size: 1.2em;
+  font-family: "Open Sans";
   color: white;
 }
 h4 {
   font-size: 2.5em; /* 40px/16=2.5em */
   Color: white;
+  font-family: 'Sofia';
 }
 
 pre {
   font-size: 2.3em;
-<<<<<<< HEAD
   color:white;
-=======
->>>>>>> 3c5d9e78b72c8cc5065ead9ac37c4173499884f9
+  font-family: "Sofia";
 }
 
 p.one {
@@ -61,21 +58,32 @@ p.one {
   padding: 2.5%;
   text-indent: 50px;
 }
-/* this section will be trying to work with borders resources*/
-#rcorners1 {
-    border-radius: 0px;
-<<<<<<< HEAD
-    background: black;
-=======
-    background: yellow;
->>>>>>> 3c5d9e78b72c8cc5065ead9ac37c4173499884f9
-    padding: 500px;
-    width: 500px;
-    height: 150px;
-    margin: auto;
-    padding-top:50px;
+
+h5 {
+  font-size: 1em; /* 40px/16=2.5em */
+  Color: white;
+  font-family: 'Open Sans';
 }
-/* #rcorners4 { maddie's border around her picture which we arent using
+/* this section will be trying to work with borders resources*/
+/*#rcorners1 {
+    border-radius: 0px;
+    background: black;
+    background-color: yellow;
+    margin-right: 2.5%;
+    padding: 2.5%;
+    height: 50
+    /*
+    padding: 15%;
+    width: 25%;
+    height: 25%;
+    margin: auto;
+    padding-top: 50px;
+    position: fixed;
+    /*margin-right: 190px;*/
+    /*float: relative;
+    /*right: 100px;*/
+
+/* #rcorners4 { maddie/ border around her picture which we arent using
   border-radius: 0px;
   background: red;
   padding: 25px;
@@ -98,57 +106,53 @@ p.one {
   padding-top: 20px;
 
   position: relative;
-  /* bottom: 10px; */
+  ttom: 10px; */
 
 
 /* this section will be trying to work with borders lauren's text info*/
 #rcorners2 {
     border-radius: 0px;
-<<<<<<< HEAD
+    /*background: black;*/
     background: black;
-=======
-    background: yellow;
->>>>>>> 3c5d9e78b72c8cc5065ead9ac37c4173499884f9
     padding: 25px;
     width: 20%;
-    height: 25%px;
+    height: 25%;
     margin: 14px;
     padding-top: 20px;
-    position:fixed;
-    margin-right: 190px;
+    position: fixed;
+    margin-left: 500px;
     float:relative;
-    right: 700px
+    right: 900px;
+    /*position: fixed;
+    margin-left: 120px;
+    float: relative;
+    right: 700px;*/
 }
-
 #rcorners5 {
     border-radius: 0px;
-<<<<<<< HEAD
+    /*background: black;*/
     background: black;
-=======
-    background: red;
->>>>>>> 3c5d9e78b72c8cc5065ead9ac37c4173499884f9
     padding: 25px;
     width: 20%;
-    height: 25%px;
+    height: 25%;
     margin: 14px;
     padding-top: 20px;
     padding-left: 20px;
     position: fixed;
 }
-<<<<<<< HEAD
+
 #rcorners6 {
     border-radius: 0px;
     background: black;
     padding: 25px;
     width: 20%;
-    height: 25%px;
+    height: 25%;
     margin: 14px;
     padding-top: 20px;
     position:fixed;
     margin-left:500px;
     float:relative;
-    right:450px
-
+    right: 450px;
 }
 
 #rcorners7 {
@@ -162,12 +166,10 @@ p.one {
     position:fixed;
     margin-left:500px;
     float:relative;
-    right:55px
-
+    right: 55px;
 }
+/*
 
-=======
->>>>>>> 3c5d9e78b72c8cc5065ead9ac37c4173499884f9
 /*
 lines 41 through 77
 this text is for creaeting navigation bar and a working tab button*/
@@ -180,17 +182,17 @@ div.tab {
 }
 /* Style the buttons inside the tab */
 div.tab button {
-    background-color: black;
+    background-color: #DCDCDC;
     float: left;
     border: none;
     outline: none;
     cursor: pointer;
     length: 25%;
     width: 25%;
-    padding: 14px 83px;
+    padding: 14px 306.3px;
     transition: 0.3s;
     font-size: 17px;
-    color: whie;
+    /*color: whie;*/
 }
 /* Change background color of buttons on hover */
 div.tab button:hover {
@@ -205,7 +207,6 @@ div.tab button.active {
     display: none;
     padding: 6px 12px;
     border-top: none;
-
 }
 
 </style>
@@ -213,85 +214,60 @@ div.tab button.active {
 <body>
 
 
-
 <div class="tab">
   <button class="tablinks" onclick="opentab(event, 'Home')">Home</button>
   <button class="tablinks" onclick="opentab(event, 'About')">About</button>
   <button class="tablinks" onclick="opentab(event, 'Game')">Game</button>
-  <button class="tablinks" onclick="opentab(event, 'Resources')">Resources</button>
+  <!--<button class="tablinks" onclick="opentab(event, 'Resources')">Resources</button>-->
 </div>
 
-<center> <br> <br> <br> <br> <br><br> <br> <br> <img src ="blacklogo.png" alt = "Logo" style = "width:618px;height:auto;"></center>
-<center><pre>  Mental Health Game</pre> </center>
-
-<div id="Home" class="tabcontent">
-<<<<<<< HEAD
+<div id="Home" class="tabcontent" style="display:block">
   <center> <br> <br> <br> <br> <br><br> <br> <br> <img src ="blacklogo.png" alt = "Logo" style = "width:618px;height:auto;"></center>
   <center><pre>  Mental Health Game</pre> </center>
-=======
-
-
-<!--  <center> <br> <br> <br> <br> <br><br> <br> <br> <img src ="blacklogo.png" alt = "Logo"   <p id="Mental">Mental Health Game</p> </center> -->
-
->>>>>>> 3c5d9e78b72c8cc5065ead9ac37c4173499884f9
 </div>
-
 
 
 <div id="About" class="tabcontent">
-  <h4>About The Creators</h4>
-
-<<<<<<< HEAD
-  <pre>    Lauren Colbert          Maddie Anderson                  Ada Pici             Marlem Olivar </pre>
-  <img class="img-circle" src ="Lauren.jpg" alt = "lauren" style ="width:234px;height:auto;" hspace="70" >
-  <img class="img-circle" src ="Madeleine.jpg" alt= "maddie" style="width:238px;height:auto;" hspace="150" >
-  <img class="img-circle" src="me.jpg" alt= "ada" style="width:230px; height:auto;" hspace="150" >
-  <img class="img-circle" src="Marlem.jpg" alt= "ada" style="width:230px; height:auto;"  >
+<center>  <h4>About The Creators</h4> </center>
+  <pre>    Lauren Colbert               Maddie Anderson                         Ada Pici             Marlem Olivar </pre>
+  <img class="img-circle" src ="Lauren.jpg" alt = "lauren" style ="width:234px;height:auto;" hspace="70">
+  <img class="img-circle" src ="Madeleine.jpg" alt= "maddie" style="width:238px;height:auto;" hspace="150">
+  <img class="img-circle" src="me.jpg" alt= "ada" style="width:230px; height:auto;" hspace="150">
+  <img class="img-circle" src="Marlem.jpg" alt= "ada" style="width:230px; height:auto;">
   <h3 id="rcorners2"> Maddie Anderson enjoys playing guitar, doing theatre, drawing, and programming. She plans to major in Computer Science at the University of Illinois, and eventually become a UX designer or creative technologist.</h3>>
   <h3 id="rcorners5"> Lauren is going to major in Information Technology at Auburn University in Alabama, and hopes to become a project manager at a tech startup. She has been playing percussion in band since 4th grade, and enjoys reading, creating props, and playing Dungeons and Dragons in her free time. </h3>>
   <h3 id="rcorners6"> Ada's hobbies include painting and drawing on her free time. She's been playing violin for 9 years and plans on majoring in Mathematics. </h3>>
   <h3 id="rcorners7"> Marlem enjoys reading, painting, and drawing  in her free time. She plans on majoring in computer science. </h3>>
-=======
-<!--  <pre>     Lauren Colbert              Maddie Anderson </pre>
-  <img class="img-circle" src ="lauren.png" alt = "lauren" style ="width:234px;height:auto;" hspace="70" >
-  <img class="img-circle" src ="maddie.png" alt= "maddie" style="width:238px;height:auto;" hspace="170" >
-  <h3 id="rcorners2"> Lauren is in Information Technology at Auburn University in Alabama, and hopes to become a project manager at a tech startup. She has been playing percussion in band since 4th grade, and enjoys reading, creating props, and playing Dungeons and Dragons in her free time. </h3>
-  <h3 id="rcorners5"> Lauren is going to major in Information Technology at Auburn University in Alabama, and hopes to become a project manager at a tech startup. She has been playing percussion in band since 4th grade, and enjoys reading, creating props, and playing Dungeons and Dragons in her free time. </h3> -->
 
->>>>>>> 3c5d9e78b72c8cc5065ead9ac37c4173499884f9
 
 </div>
 
 <div id="Game" class="tabcontent">
-  <h4>Game</h4>
-  <p class="one"> Fatastical End is a game made to acknowleged and talk about mental health.
+<center>  <h4>Game</h4> </center>
+  <h3 class="one"> Fatastical End is a game made to acknowleged and talk about mental health.
                 Fantastical end has three different path each dealing with a different person,
-                setting, symphons and illnesss. Each path has a pre selected set of monsters
+                setting, symptoms and illnesss. Each path has a pre selected set of monsters
                 that that path will fight, each of those monsters represent symphons of the
                 mental illiness that that path reprsents.<br>
                 <br>
-                The paths are a Schizophrenia homeless person, a teen with PTSD, and a middle
-                age man dealing with DID. <br>
-                <br>
-                The schisophrenia person fights 'Voice':hearing voices, 'Unreality':disconnection
-                from reality, 'Aggression':aggressive behavior , 'Paranoia': , 'Guilt': <br>
-                <br>
-                The PTSD teen is fighting, 'Hallucinations':    , 'Flashbacks':  , 'Anxiety': ,
-                'Loneliness':    <br>
-                <br>
-                The DID man was fighting, 'Unreality': , 'Moodswings':  'Timeloss':   'Depression':</p>
+                In the game, you can chose to be a homeless person with schisophrenia, a teen with PTSD or a middle-age man with DID. You fight monsters that symbolyze anxiety, paranoia and reality.<br>
+                </h3>
 
-<!--voice, reaity, agression, paranoai, guilt,
+            <center>
+              <a href="https://mega.nz/#F!8io2DY7D!SLeCW5AdfH753SOjCRuK4w">
+                <img src="game.png" alt = "screenshot">
+              </a>
+            </center>
 
-hallucination, flashback, anxiety, flashback, anxiety, loneliness, flashback, anxiety
 
-unreality, mood swings, timeloss, depression,
-</div>-->
 
-<div id="Resources" class="tabcontent">
-  <h4 id="rcorners1"> Why did we chose to create this game? </h4>
 
 </div>
+
+<!--<div id="Resources" class="tabcontent">
+  <h4 id="rcorners1"> Why did we chose to create this game? </h4>
+  <font color="white">words</font>
+</div>-->
 
 <script>
 function opentab(evt, cityName) {
