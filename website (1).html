@@ -3,11 +3,12 @@
 <head>
 <style>
 
+/* this is to create the circular shape of our profile pictures */
 .img-circle {
     border-radius: 50%;
-
 }
 
+/*  the properties for our text*/
 p {
     font-size: 250%;
     font-family: monospace;
@@ -51,7 +52,15 @@ pre {
 >>>>>>> 3c5d9e78b72c8cc5065ead9ac37c4173499884f9
 }
 
-
+p.one {
+  border-style: hidden;
+  border-color: grey;
+  background-color: grey;
+  font-size: 1.7em;
+  margin-right: 2.5%;
+  padding: 2.5%;
+  text-indent: 50px;
+}
 /* this section will be trying to work with borders resources*/
 #rcorners1 {
     border-radius: 0px;
@@ -66,7 +75,7 @@ pre {
     margin: auto;
     padding-top:50px;
 }
-/* #rcorners4 { maddie border we arent using
+/* #rcorners4 { maddie's border around her picture which we arent using
   border-radius: 0px;
   background: red;
   padding: 25px;
@@ -79,7 +88,7 @@ pre {
 */
 
 
-/*#rcorners3 { laurens border that we arent using any more
+/*#rcorners3 { laurens' border around her picture that we arent using any more
   border-radius: 0px;
   background: blue;
   padding: 25px;
@@ -163,9 +172,11 @@ pre {
 lines 41 through 77
 this text is for creaeting navigation bar and a working tab button*/
 /* Style the tab */
+
 div.tab {
     overflow: hidden;
     background-color: white;
+
 }
 /* Style the buttons inside the tab */
 div.tab button {
@@ -194,9 +205,8 @@ div.tab button.active {
     display: none;
     padding: 6px 12px;
     border-top: none;
+
 }
-
-
 
 </style>
 </head>
@@ -211,6 +221,9 @@ div.tab button.active {
   <button class="tablinks" onclick="opentab(event, 'Resources')">Resources</button>
 </div>
 
+<center> <br> <br> <br> <br> <br><br> <br> <br> <img src ="blacklogo.png" alt = "Logo" style = "width:618px;height:auto;"></center>
+<center><pre>  Mental Health Game</pre> </center>
+
 <div id="Home" class="tabcontent">
 <<<<<<< HEAD
   <center> <br> <br> <br> <br> <br><br> <br> <br> <img src ="blacklogo.png" alt = "Logo" style = "width:618px;height:auto;"></center>
@@ -218,10 +231,12 @@ div.tab button.active {
 =======
 
 
-  <center> <br> <br> <br> <br> <br><br> <br> <br> <img src ="blacklogo.png" alt = "Logo"   <p id="Mental">Mental Health Game</p> </center>
+<!--  <center> <br> <br> <br> <br> <br><br> <br> <br> <img src ="blacklogo.png" alt = "Logo"   <p id="Mental">Mental Health Game</p> </center> -->
 
 >>>>>>> 3c5d9e78b72c8cc5065ead9ac37c4173499884f9
 </div>
+
+
 
 <div id="About" class="tabcontent">
   <h4>About The Creators</h4>
@@ -232,16 +247,16 @@ div.tab button.active {
   <img class="img-circle" src ="Madeleine.jpg" alt= "maddie" style="width:238px;height:auto;" hspace="150" >
   <img class="img-circle" src="me.jpg" alt= "ada" style="width:230px; height:auto;" hspace="150" >
   <img class="img-circle" src="Marlem.jpg" alt= "ada" style="width:230px; height:auto;"  >
-  <h3 id="rcorners2"> Maddie Anderson enjoys playing guitar, doing theatre, drawing, and programming. She plans to major in Computer Science at the University of Illinois, and eventually become a UX designer or creative technologist.</h3>
-  <h3 id="rcorners5"> Lauren is going to major in Information Technology at Auburn University in Alabama, and hopes to become a project manager at a tech startup. She has been playing percussion in band since 4th grade, and enjoys reading, creating props, and playing Dungeons and Dragons in her free time. </h3>
-  <h3 id="rcorners6"> Ada's hobbies include painting and drawing on her free time. She's been playing violin for 9 years and plans on majoring in Mathematics. </h3>
-  <h3 id="rcorners7"> Marlem enjoys reading, painting, and drawing  in her free time. She plans on majoring in computer science. </h3>
+  <h3 id="rcorners2"> Maddie Anderson enjoys playing guitar, doing theatre, drawing, and programming. She plans to major in Computer Science at the University of Illinois, and eventually become a UX designer or creative technologist.</h3>>
+  <h3 id="rcorners5"> Lauren is going to major in Information Technology at Auburn University in Alabama, and hopes to become a project manager at a tech startup. She has been playing percussion in band since 4th grade, and enjoys reading, creating props, and playing Dungeons and Dragons in her free time. </h3>>
+  <h3 id="rcorners6"> Ada's hobbies include painting and drawing on her free time. She's been playing violin for 9 years and plans on majoring in Mathematics. </h3>>
+  <h3 id="rcorners7"> Marlem enjoys reading, painting, and drawing  in her free time. She plans on majoring in computer science. </h3>>
 =======
-  <pre>     Lauren Colbert              Maddie Anderson </pre>
+<!--  <pre>     Lauren Colbert              Maddie Anderson </pre>
   <img class="img-circle" src ="lauren.png" alt = "lauren" style ="width:234px;height:auto;" hspace="70" >
   <img class="img-circle" src ="maddie.png" alt= "maddie" style="width:238px;height:auto;" hspace="170" >
   <h3 id="rcorners2"> Lauren is in Information Technology at Auburn University in Alabama, and hopes to become a project manager at a tech startup. She has been playing percussion in band since 4th grade, and enjoys reading, creating props, and playing Dungeons and Dragons in her free time. </h3>
-  <h3 id="rcorners5"> Lauren is going to major in Information Technology at Auburn University in Alabama, and hopes to become a project manager at a tech startup. She has been playing percussion in band since 4th grade, and enjoys reading, creating props, and playing Dungeons and Dragons in her free time. </h3>
+  <h3 id="rcorners5"> Lauren is going to major in Information Technology at Auburn University in Alabama, and hopes to become a project manager at a tech startup. She has been playing percussion in band since 4th grade, and enjoys reading, creating props, and playing Dungeons and Dragons in her free time. </h3> -->
 
 >>>>>>> 3c5d9e78b72c8cc5065ead9ac37c4173499884f9
 
@@ -249,8 +264,29 @@ div.tab button.active {
 
 <div id="Game" class="tabcontent">
   <h4>Game</h4>
-  <h4>Tokyo is the capital of Japan.wee in da right file</h4>
-</div>
+  <p class="one"> Fatastical End is a game made to acknowleged and talk about mental health.
+                Fantastical end has three different path each dealing with a different person,
+                setting, symphons and illnesss. Each path has a pre selected set of monsters
+                that that path will fight, each of those monsters represent symphons of the
+                mental illiness that that path reprsents.<br>
+                <br>
+                The paths are a Schizophrenia homeless person, a teen with PTSD, and a middle
+                age man dealing with DID. <br>
+                <br>
+                The schisophrenia person fights 'Voice':hearing voices, 'Unreality':disconnection
+                from reality, 'Aggression':aggressive behavior , 'Paranoia': , 'Guilt': <br>
+                <br>
+                The PTSD teen is fighting, 'Hallucinations':    , 'Flashbacks':  , 'Anxiety': ,
+                'Loneliness':    <br>
+                <br>
+                The DID man was fighting, 'Unreality': , 'Moodswings':  'Timeloss':   'Depression':</p>
+
+<!--voice, reaity, agression, paranoai, guilt,
+
+hallucination, flashback, anxiety, flashback, anxiety, loneliness, flashback, anxiety
+
+unreality, mood swings, timeloss, depression,
+</div>-->
 
 <div id="Resources" class="tabcontent">
   <h4 id="rcorners1"> Why did we chose to create this game? </h4>
